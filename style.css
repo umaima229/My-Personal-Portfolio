@@ -1,0 +1,217 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #e6cccc;
+  line-height: 1.7;
+background: rgba(8, 14, 26, 0.753)
+  
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  color: rgb(238, 245, 253);
+  font-weight: bold;
+  justify-content: center;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #308bb6;
+
+}
+
+.logo span {
+  color: #04cff3;
+}
+.logo{
+  font-size: 3rem;
+  font-weight: 700;
+  align-items: center;
+  color: #fdfeff;
+ 
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  /* background: linear-gradient(135deg, #ff758c, #8b244f); */
+  color: rgb(250, 250, 250);
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero .highlight {
+  color: #1ab9e9;
+}
+
+.hero .btn {
+  /* background: #46310a; */
+  color: #1aa6e7;
+  font-weight: bold;
+  border-radius: 0rem;
+  font-size: 1.9rem;
+  transition: .5s;
+  font-weight: 1000;
+  display: inline block;
+}
+ .hero .btn:hover{
+  background: transparent;
+  color: #c9c9c9;
+  box-shadow: none
+  
+}
+
+.hero-image img {
+  width: 400px;
+  border-radius: 30px;
+  
+}
+
+/* About Section */
+#about {
+  padding: 90px 300px;
+  text-align: left center;
+  /* background-color: lawngreen; */
+}
+
+.about-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content img {
+  width: 300px;
+  border-radius: 150%;
+}
+
+/* Services Section */
+#services {
+  background: fixed;
+  padding: 90px 300px;
+
+}
+
+.services-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.service-card {
+  background: rgb(49, 147, 185);
+  padding: 40px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.952);
+}
+
+.service-card h3 {
+  margin-top: 10px;
+  color: #f5f5f5;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 90px 300px;
+  /* background-color: #f9f9f9; */
+  text-align: center;
+}
+
+#portfolio h2 {
+  margin-bottom: 40px;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamic Grid */
+  gap: 40px;
+}
+
+.portfolio-item {
+  /* background: white; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures images fit nicely inside */
+}
+
+.portfolio-item h3 {
+  margin: 10px;
+  font-size: 18px;
+  color: #f8f8f8;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px); /* Adds hover lift effect */
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+
+/* Contact Section */
+#contact {
+  padding: 100px 500px;
+  /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+  color: rgb(255, 255, 255);
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 40px;
+}
+
+form button {
+  background: #3f87a3;
+  color: #333;
+  font-weight: bold;
+}
+
+/* form button:hover {
+  background: #ff6f61;
+} */
+
+/* Footer */
+footer {
+  /* background: #333; */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+}
